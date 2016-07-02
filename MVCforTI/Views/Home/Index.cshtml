@@ -1,0 +1,10 @@
+﻿@model MVCforTI.Models.student
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<button class="btn btn-danger">@Html.ActionLink("Login","Login")</button>
+
+welcome @Model.firstName @Model.lastName
