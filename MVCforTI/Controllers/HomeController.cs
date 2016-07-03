@@ -38,7 +38,6 @@ namespace MVCforTI.Controllers
             }
 
         }
-
         [HttpGet]
         public ActionResult Register()
         {
@@ -54,6 +53,18 @@ namespace MVCforTI.Controllers
                 db.students.Add(s);
                 db.SaveChanges();
             }
+            return View();
+        }
+        public ActionResult Profile()
+        {
+            return View();
+        }
+        public ActionResult About()
+        {
+            return View();
+        }
+        public ActionResult ContactUs()
+        {
             return View();
         }
     }
